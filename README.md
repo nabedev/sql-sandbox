@@ -8,5 +8,6 @@ $ rm -rf v1.0.7.tar.gz
 
 $ docker build -t sql-sandbox .
 $ docker run --name sql-sandbox-container -d -p 3306:3306 sql-sandbox
+$ docker exec -it sql-sandbox-container mysql -uroot -p
 ```
 
